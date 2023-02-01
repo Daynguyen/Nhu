@@ -1,216 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Như cục dàng của Đầy</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-quarter img{margin-bottom: -6px; cursor: pointer}
-.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
-</style>
+  <title>Như cục dàng của Đầy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
+
+    .w3-quarter img {
+      margin-bottom: -6px;
+      cursor: pointer
+    }
+
+    .w3-quarter img:hover {
+      opacity: 0.6;
+      transition: 0.3s
+    }
+  </style>
 </head>
+
 <body class="w3-light-grey">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" 
-style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
-  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">ĐÓNG</a> 
-  <a href="traitim.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">TRÁI TIM</a> 
-  <a href="traitim2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">TRÁI TIM TÊN</a> 
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">THÔNG TIN</a> 
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">LIÊN HỆ</a>
-</nav>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large"
+    style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+    <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">ĐÓNG</a>
+    <a href="traitim.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">TRÁI TIM</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">THÔNG TIN</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">LIÊN HỆ</a>
+  </nav>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">Một số ảnh dễ thương</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-</header>
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+    <span class="w3-left w3-padding">Một số ảnh dễ thương</span>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+  </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
-  
-  <!-- Photo grid -->
-  <div class="w3-row w3-grayscale-min">
-    <div class="w3-quarter">
-      <img src="IMG_1648569601397_1648569630267.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu đi thực tập">
-      <img src="IMG_1654352931241_1654353653872.jpg" style="width:100%" onclick="onClick(this)" alt="đi dự lễ tốt nghiệp với em yêu">
-      <img src="IMG_1654353587433_1654353649554.jpg" style="width:100%" onclick="onClick(this)" alt="đi dự lễ tốt nghiệp với em yêu">
-      <img src="totnghiep2.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu cùng anh chụp ảnh seo phi">
-      <img src="totnghiep6.jpg" style="width:100%" onclick="onClick(this)" alt="chỉ có thể là em yêu của Đầy mới xinh như thế">
-   </div>
-    
-   <div class="w3-quarter">
-      <img src="IMG_1654353587433_1654353649554.jpg" style="width:100%" onclick="onClick(this)" alt="đi dự lễ tốt nghiệp với em yêu">
-      <img src="IMG_1654353587468_1654353649595.jpg" style="width:100%" onclick="onClick(this)" alt="đi dự lễ tốt nghiệp với em yêu">
-      <img src="IMG_1654354211867_1654354427649.jpg" style="width:100%" onclick="onClick(this)" alt="đi dự lễ tốt nghiệp với em yêu">
-      <img src="1.jpg" style="width:100%" onclick="onClick(this)" alt="Ngày có cơ hội bắt đầu lại với em yêu">
-      <img src="2.jpg" style="width:100%" onclick="onClick(this)" alt="Ngày tình cảm dâng trào với em yêu">
-      <img src="totnghiep3.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu thật dễ thương">
-      <img src="totnghiep7.jpg" style="width:100%" onclick="onClick(this)" alt="cùng nhau chụp ảnh seo phi">
-    </div>
-    
-    <div class="w3-quarter">
-      <img src="IMG_1654354211903_1654354427735.jpg" style="width:100%" onclick="onClick(this)" alt="đi dự lễ tốt nghiệp với em yêu">
-      <img src="IMG_20220413_081133.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu đi thực tập">
-      <img src="IMG_20220429_202929.jpg" style="width:100%" onclick="onClick(this)" alt="Đi xem bắn pháo hoa 30 tháng 04 với em yêu">
-      <img src="totnghiep1.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu xinh đẹp trong ngày lễ tốt nghiệp">
-      <img src="totnghiep4.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu của Đầy quá xinh">
-      <img src="totnghiep8.jpg" style="width:100%" onclick="onClick(this)" alt="đứng kế em yêu của anh nè">
-    </div>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
 
-    <div class="w3-quarter">
-      <img src="IMG_20220429_202953.jpg" style="width:100%" onclick="onClick(this)" alt="Đi xem bắn pháo hoa 30 tháng 04 với em yêu">
-      <img src="IMG_20220429_203049.jpg" style="width:100%" onclick="onClick(this)" alt="Đi xem bắn pháo hoa 30 tháng 04 với em yêu">
-      <img src="IMG_20220604_214935.jpg" style="width:100%" onclick="onClick(this)" alt="đi dự lễ tốt nghiệp với em yêu">
-      <img src="totnghiep5.jpg" style="width:100%" onclick="onClick(this)" alt="nào nào mình cùng nhau seo phi">
-      <img src="totnghiep9.jpg" style="width:100%" onclick="onClick(this)" alt="Thư ký riêng của Đầy Nguyễn">
-    </div>
-  </div>
+    <!-- Photo grid -->
+    <div class="w3-row w3-grayscale-min">
+      <div class="w3-quarter">
+        <img src="IMG_1648569601397_1648569630267.jpg" style="width:100%" onclick="onClick(this)"
+          alt="em yêu đi thực tập">
+        <img src="IMG_1654352931241_1654353653872.jpg" style="width:100%" onclick="onClick(this)"
+          alt="đi dự lễ tốt nghiệp với em yêu">
+        <img src="IMG_1654353587433_1654353649554.jpg" style="width:100%" onclick="onClick(this)"
+          alt="đi dự lễ tốt nghiệp với em yêu">
+        <img src="totnghiep2.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu cùng anh chụp ảnh seo phi">
+        <img src="totnghiep6.jpg" style="width:100%" onclick="onClick(this)"
+          alt="chỉ có thể là em yêu của Đầy mới xinh như thế">
+        <img src="tetcinima.jpg" style="width:100%" onclick="onClick(this)" alt="Ngồi cạnh em yêu trong rạp phim nè">
+        <img src="tetitada.jpg" style="width:100%" onclick="onClick(this)" alt="Chụp trong itada nè cục dàng">
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-  
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
+        <img src="tetlanghoa4.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Cũng là ôm eo cục dàng nhưng ảnh nó sáng hơn é">
+        <img src="tetlanghoa8.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Đứng mõi gòi mình ngồi chụp hen cục dàng">
+        <img src="tetmyluong4.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Nhìn tương lai xong thì mình nhìn về hiện tại có nhau nhe cục dàng">
 
-  <!-- About section -->
-  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-    <h4><b>THÔNG TIN</b></h4>
-    <img src="IMG_20220517_110055.jpg" alt="Em yeu của Đầy" class="w3-image w3-padding-32" width="600" height="650">
-    <div class="w3-content w3-justify" style="max-width:600px">
-      <h4>Giới thiệu</h4>
-      <p>Tôi tên là Như, Tôi rất thương anh Đầy và sau này tôi muốn lấy ảnh làm chồng tôi.
-      </p>
-      <p>Mail: NhulacuaDay@gmail.com</p>
-      <p>SĐT: 0822753789</p>
-      <hr class="w3-opacity">
-      <h4 class="w3-padding-16">kỹ năng</h4>
-      <p class="w3-wide">Thương ghệ</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
-      </div>
-      <p class="w3-wide">Dỗi ghệ</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
-      </div>
-      <p class="w3-wide">Chiều ghệ</p>
-      <div class="w3-white">
-        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:90%">90%</div>
-      </div>
-      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Tải xuống thông tin</button></p>
-      <hr class="w3-opacity">
-    </div>
-  </div>
-
-  <!-- Contact section -->
-  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-    <div class="w3-content" style="max-width:600px">
-      <h4 class="w3-center"><b>Liên hệ với tôi</b></h4>
-      <p></p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-section">
-          <label>Tên</label>
-          <input class="w3-input w3-border" type="text" name="Name" required>
-        </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input w3-border" type="text" name="Email" required>
-        </div>
-        <div class="w3-section">
-          <label>Tin nhắn</label>
-          <input class="w3-input w3-border" type="text" name="Message" required>
-        </div>
-        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Gửi tin nhắn</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-grey">  
-    <div class="w3-row-padding">
-      <div class="w3-third">
-        <h3>THÔNG TIN</h3>
-        <p>Trường Đại Học Cần Thơ , Đường 3/2 Phường Xuân Khánh , Ninh Kiều , Cần Thơ</p>      
-      </div>
-    
-      <div class="w3-third">
-        <h3>BÀI ĐÃ ĐĂNG</h3>
-        <ul class="w3-ul">
-          <li class="w3-padding-16 w3-hover-black">
-            <img src="IMG_20220517_110055.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Cục dàng</span><br>
-            <span>Cục dàng của anh</span>
-          </li>
-          <li class="w3-padding-16 w3-hover-black">
-            <img src="IMG_20220413_081133.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Em yêu</span><br>
-            <span>Cô giáo của anh</span>
-          </li> 
-        </ul>
       </div>
 
-      <div class="w3-third">
-        <h3>THẺ PHỔ BIẾN</h3>
-        <p>
-          <span class="w3-tag w3-black w3-margin-bottom">Việt Nam</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Lon don</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Hàn Quốc</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Iraq</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Đài Loan</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Nhật Bản</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Hoa Kỳ</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Store</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Singapore</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+      <div class="w3-quarter">
+        <img src="IMG_1654353587433_1654353649554.jpg" style="width:100%" onclick="onClick(this)"
+          alt="đi dự lễ tốt nghiệp với em yêu">
+        <img src="IMG_1654353587468_1654353649595.jpg" style="width:100%" onclick="onClick(this)"
+          alt="đi dự lễ tốt nghiệp với em yêu">
+        <img src="IMG_1654354211867_1654354427649.jpg" style="width:100%" onclick="onClick(this)"
+          alt="đi dự lễ tốt nghiệp với em yêu">
+        <img src="1.jpg" style="width:100%" onclick="onClick(this)" alt="Ngày có cơ hội bắt đầu lại với em yêu">
+        <img src="2.jpg" style="width:100%" onclick="onClick(this)" alt="Ngày tình cảm dâng trào với em yêu">
+        <img src="totnghiep3.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu thật dễ thương">
+        <img src="totnghiep7.jpg" style="width:100%" onclick="onClick(this)" alt="cùng nhau chụp ảnh seo phi">
+        <img src="tetcinema2.jpg" style="width:100%" onclick="onClick(this)" alt="Đứng cạnh em yêu chụp ảnh quá tuyệt">
+        <img src="tetlanghoa.jpg" style="width:100%" onclick="onClick(this)" alt="Cục dàng của anh cười xinh như hoa">
+        <img src="tetlanghoa5.jpg" style="width:100%" onclick="onClick(this)" alt="Nhìn cục dàng anh tri thức chưa nè">
+        <img src="tetmyluong.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Ngồi trên trái tim chụp chung với cục dàng của anh nè">
+        <img src="tetmyluong5.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Năm con mèo thì mình chụp chung với tượng con mèo">
+      </div>
+
+      <div class="w3-quarter">
+        <img src="IMG_1654354211903_1654354427735.jpg" style="width:100%" onclick="onClick(this)"
+          alt="đi dự lễ tốt nghiệp với em yêu">
+        <img src="IMG_20220413_081133.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu đi thực tập">
+        <img src="IMG_20220429_202929.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Đi xem bắn pháo hoa 30 tháng 04 với em yêu">
+        <img src="totnghiep1.jpg" style="width:100%" onclick="onClick(this)"
+          alt="em yêu xinh đẹp trong ngày lễ tốt nghiệp">
+        <img src="totnghiep4.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu của Đầy quá xinh">
+        <img src="totnghiep8.jpg" style="width:100%" onclick="onClick(this)" alt="đứng kế em yêu của anh nè">
+        <img src="tetcongvien.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu tựa đầu vào anh rất tình cảm">
+        <img src="tetlanghoa2.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Đứng lên chụp ảnh seo phi với cục dàng">
+        <img src="tetlanghoa6.jpg" style="width:100%" onclick="onClick(this)" alt="Tại vì cục dàng của anh quá xinh">
+        <img src="tetmyluong2.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Ôm cục dàng chụp ảnh trước cổng hoa nè">
+        <img src="tetmyluongemyeu.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Nhìn dô thì anh chỉ muốn ôm trọn cục dàng của anh mà hoi">
+      </div>
+
+      <div class="w3-quarter">
+        <img src="IMG_20220429_202953.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Đi xem bắn pháo hoa 30 tháng 04 với em yêu">
+        <img src="IMG_20220429_203049.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Đi xem bắn pháo hoa 30 tháng 04 với em yêu">
+        <img src="IMG_20220604_214935.jpg" style="width:100%" onclick="onClick(this)"
+          alt="đi dự lễ tốt nghiệp với em yêu">
+        <img src="totnghiep5.jpg" style="width:100%" onclick="onClick(this)" alt="nào nào mình cùng nhau seo phi">
+        <img src="totnghiep9.jpg" style="width:100%" onclick="onClick(this)" alt="Thư ký riêng của Đầy Nguyễn">
+        <img src="tetcongvien2.jpg" style="width:100%" onclick="onClick(this)" alt="em yêu tựa đầu vào anh sắp hôn">
+        <img src="tetlanghoa3.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Ôm cục dàng chụp ảnh đúng là quá hạnh phúc">
+        <img src="tetlanghoa7.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Tấm ảnh đầu tiên được chụp dùm ở làng hoa nè cục dàng">
+        <img src="tetmyluong3.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Cùng nhìn về tương lai, chúng ta sẽ có nhau hén cục dàng">
+        <img src="tettraitim.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Mỗi người một nữa tạo nên 1 trái tim của chúng mình nè cục dàng">
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+      <h4><b>THÔNG TIN</b></h4>
+      <img src="IMG_20220517_110055.jpg" alt="Em yeu của Đầy" class="w3-image w3-padding-32" width="600" height="650">
+      <div class="w3-content w3-justify" style="max-width:600px">
+        <h4>Giới thiệu</h4>
+        <p>Tôi tên là Như, Tôi rất thương anh Đầy và sau này tôi muốn lấy ảnh làm chồng tôi.
         </p>
+        <p>Mail: NhulacuaDay@gmail.com</p>
+        <p>SĐT: 0822753789</p>
+        <hr class="w3-opacity">
+        <h4 class="w3-padding-16">kỹ năng</h4>
+        <p class="w3-wide">Thương ghệ</p>
+        <div class="w3-white">
+          <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+        </div>
+        <p class="w3-wide">Dỗi ghệ</p>
+        <div class="w3-white">
+          <div class="w3-container w3-padding-small w3-center w3-grey" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide">Chiều ghệ</p>
+        <div class="w3-white">
+          <div class="w3-container w3-padding-small w3-center w3-grey" style="width:99%">99%</div>
+        </div>
+        <!-- <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Tải
+            xuống thông tin</button></p> -->
+        <hr class="w3-opacity">
       </div>
     </div>
-  </footer>
-  
-  <div class="w3-black w3-center w3-padding-24"> Được cung cấp bởi <a href="https://www.facebook.com/daynguyen2112" title="W3.CSS" target="_blank" class="w3-hover-opacity">Daypro.com</a></div>
 
-<!-- End page content -->
-</div>
+    <!-- Contact section -->
+    <!-- <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+      <div class="w3-content" style="max-width:600px">
+        <h4 class="w3-center"><b>Liên hệ với tôi</b></h4>
+        <p></p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-section">
+            <label>Tên</label>
+            <input class="w3-input w3-border" type="text" name="Name" required>
+          </div>
+          <div class="w3-section">
+            <label>Email</label>
+            <input class="w3-input w3-border" type="text" name="Email" required>
+          </div>
+          <div class="w3-section">
+            <label>Tin nhắn</label>
+            <input class="w3-input w3-border" type="text" name="Message" required>
+          </div>
+          <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Gửi tin nhắn</button>
+        </form>
+      </div>
+    </div> -->
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-grey">
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <h3>THÔNG TIN</h3>
+          <p>Trường Đại Học Cần Thơ , Đường 3/2 Phường Xuân Khánh , Ninh Kiều , Cần Thơ</p>
+        </div>
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+        <div class="w3-third">
+          <h3>BÀI ĐÃ ĐĂNG</h3>
+          <ul class="w3-ul">
+            <li class="w3-padding-16 w3-hover-black">
+              <img src="IMG_20220517_110055.jpg" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Cục dàng</span><br>
+              <span>Cục dàng của anh</span>
+            </li>
+            <li class="w3-padding-16 w3-hover-black">
+              <img src="IMG_20220413_081133.jpg" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Em yêu</span><br>
+              <span>Cô giáo của anh</span>
+            </li>
+          </ul>
+        </div>
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+        <div class="w3-third">
+          <h3>THẺ PHỔ BIẾN</h3>
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Việt Nam</span> <span
+              class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span
+              class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Lon don</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Hàn Quốc</span> <span
+              class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Iraq</span> <span
+              class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Đài Loan</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Nhật Bản</span> <span
+              class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span
+              class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Hoa Kỳ</span> <span
+              class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Store</span> <span
+              class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Singapore</span> <span
+              class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+          </p>
+        </div>
+      </div>
+    </footer>
 
-</script>
+    <div class="w3-black w3-center w3-padding-24"> Được cung cấp bởi <a href="https://www.facebook.com/daynguyen2112"
+        title="W3.CSS" target="_blank" class="w3-hover-opacity">Daypro.com</a></div>
+
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+  </script>
 
 
 </body>
+
 </html>
